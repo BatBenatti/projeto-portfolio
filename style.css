@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+:root {
+  --marrom: #591902;
+  --rosinha: #f2d8ce;
+  --laranja: #a64208;
+  --petroleo: #0e5673;
+  --ceu: #80a7bf;
+}
+
+.header {
+  max-width: 80%;
+  padding: 30px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--laranja);
+  font-family: roboto;
+}
+
+.titulo-header {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--rosinha);
+}
+.header-menu {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 20px;
+}
+
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--rosinha);
+  display: block;
+  position: relative;
+  background-color: var(--laranja);
+  transition: 1.3s;
+}
+
+.header-menu a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  background-color: var(--marrom);
+  margin-top: 4px;
+  transition: 1.3s;
+  position: absolute;
+}
+
+.header-menu a:hover::after {
+  width: 30%;
+}
+
+.header-menu a:hover {
+  color: var(--marrom);
+  font-weight: 700;
+  background-color: var(--rosinha);
+  border: solid 1px;
+}
+
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  padding: 40px 20px;
+  margin: 0 auto;
+  background-color: var(--rosinha);
+}
+
+.sobre-mim::after {
+  justify-self: center;
+  display: block;
+  content: "";
+  width: 90%;
+  height: 2px;
+  margin-top: 40px;
+  background: var(--petroleo);
+}
+.minha-foto {
+  width: 350px;
+  border-radius: 50%;
+  height: 300px;
+}
+
+.botoes-redes-sociais {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.botoes-redes-sociais a {
+  border: 1px solid var(--petroleo);
+  padding: 10px;
+  border-radius: 10%;
+  font-size: larger;
+  color: var(--petroleo);
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.botoes-redes-sociais a:hover {
+  font-weight: bold;
+  scale: 1.05;
+  color: white;
+  box-shadow: 20px 15px 20px -20px #000000;
+}
+
+.botao-git:hover {
+  background: linear-gradient(#5b6571, #23272d);
+}
+
+.botao-curriculo:hover {
+  background-color: var(--laranja);
+}
+
+.botao-linkedin:hover {
+  background: linear-gradient(#1b7cdd, #0a66c2);
+}
+.sobre-mim p {
+  margin-top: 20px;
+  color: var(--petroleo);
+  font-size: 1.5rem;
+  width: 1000px;
+}
+
+.projetos {
+  max-width: 80%;
+  padding: 30px 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--ceu);
+  font-family: roboto;
+  text-align: center;
+}
+
+.projetos h1 {
+  margin: auto;
+  font-size: larger;
+  color: var(--marrom);
+}
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    width: 80%;
+  }
+
+  .header a {
+    background-color: var(--marrom);
+    border-radius: 5px;
+  }
+}
