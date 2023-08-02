@@ -8,6 +8,10 @@
   --ceu: #80a7bf;
 }
 
+* {
+  background-color: #c7d1df;
+}
+
 .header {
   max-width: 80%;
   padding: 30px 20px;
@@ -16,13 +20,14 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--laranja);
-  font-family: roboto;
+  font-family: Roboto;
 }
 
 .titulo-header {
   font-size: 40px;
   font-weight: 500;
   color: var(--rosinha);
+  background-color: var(--laranja);
 }
 .header-menu {
   display: flex;
@@ -30,6 +35,7 @@
   flex-wrap: wrap;
   justify-content: center;
   height: 20px;
+  background-color: var(--laranja);
 }
 
 .header-menu a {
@@ -59,6 +65,9 @@
   width: 30%;
 }
 
+.minha-descricao {
+  background-color: var(--rosinha);
+}
 .header-menu a:hover {
   color: var(--marrom);
   font-weight: 700;
@@ -86,9 +95,12 @@
   background: var(--petroleo);
 }
 .minha-foto {
-  width: 350px;
-  border-radius: 50%;
+  width: 300px;
+  border-radius: 25% 25%;
   height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 10px;
 }
 
 .botoes-redes-sociais {
@@ -98,6 +110,7 @@
   margin-top: 20px;
   position: relative;
   z-index: 10;
+  background-color: var(--rosinha);
 }
 
 .botoes-redes-sociais a {
@@ -108,6 +121,7 @@
   color: var(--petroleo);
   font-size: 1.25rem;
   transition: 0.3s;
+  background-color: var(--rosinha);
 }
 
 .botoes-redes-sociais a:hover {
@@ -133,6 +147,7 @@
   color: var(--petroleo);
   font-size: 1.5rem;
   width: 1000px;
+  background-color: var(--rosinha);
 }
 
 .projetos {
@@ -150,7 +165,9 @@
   margin: auto;
   font-size: larger;
   color: var(--marrom);
+  background-color: var(--ceu);
 }
+
 @media (max-width: 800px) {
   .header {
     flex-direction: column;
@@ -162,4 +179,19 @@
     background-color: var(--marrom);
     border-radius: 5px;
   }
+}
+
+.footer {
+  max-width: 80%;
+  padding: 30px 20px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--ceu);
+  font-family: roboto;
+  text-align: center;
+}
+
+.footer div {
+  background-color: var(--ceu);
 }
