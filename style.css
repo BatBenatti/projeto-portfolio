@@ -12,6 +12,7 @@
   background-color: #c7d1df;
 }
 
+/*NAVBAR*/
 .header {
   max-width: 80%;
   padding: 30px 20px;
@@ -75,6 +76,7 @@
   border: solid 1px;
 }
 
+/*SOBRE MIM*/
 .sobre-mim {
   display: flex;
   flex-direction: column;
@@ -95,12 +97,24 @@
   background: var(--petroleo);
 }
 .minha-foto {
-  width: 300px;
-  border-radius: 25% 25%;
-  height: 300px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  margin-bottom: 20px;
+  animation: animacao-foto 800ms 200ms backwards;
+}
+@keyframes animacao-foto {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .botoes-redes-sociais {
@@ -145,11 +159,12 @@
 .sobre-mim p {
   margin-top: 20px;
   color: var(--petroleo);
-  font-size: 1.5rem;
-  width: 1000px;
+  font-size: 1.2rem;
+  width: 25rem;
   background-color: var(--rosinha);
 }
 
+/* PROJETOS */
 .projetos {
   max-width: 80%;
   padding: 30px 20px;
